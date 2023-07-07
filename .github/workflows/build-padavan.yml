@@ -100,7 +100,7 @@ jobs:
         cat .config
         echo "cat .config"
         sudo ./clear_tree
-        sudo ./build_firmware_modify $TNAME 0
+        sudo ./build_firmware_modify $TNAME
         sudo mv -f images/*.trx /opt/images/
     - name : Upload packages
       uses: actions/upload-artifact@master
